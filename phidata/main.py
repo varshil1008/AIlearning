@@ -19,5 +19,8 @@ web_agent = Agent(
 
 )
 
-web_agent.print_response("Summarize the price and show the analyst recommendations and top 5 latest news for PLTR")
+web_agent.print_response('''
+                        Summarize the price and show the analyst recommendations and top 5 latest news 
+                         for AI companies in India Stock market , feel free to proceed with the additional function calls 
+                         and provide me with the details''')
 

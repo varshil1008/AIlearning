@@ -32,7 +32,7 @@ finance_agent = Agent(
 
 #finance_agent.print_response("What is the stock price of NVDA PLTR TSLA ")
 
-app = Playground(agents=[finance_agent]).get_app()
+app = Playground(agents=[finance_agent, web_agent]).get_app(use_async=False)
 
 if __name__ == "__main__":
     serve_playground_app("playground:app", reload=True)
